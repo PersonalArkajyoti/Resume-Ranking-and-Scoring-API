@@ -88,14 +88,14 @@ We welcome contributions to this project! If you'd like to help improve it, plea
 
    Start by forking the repository. This will create a copy of the project under your GitHub account, where you can freely make changes.
 
-### 2. **Make Changes**
+### 2. **Create New Branch**
 
    Create a new branch for each significant change you make. This keeps your work isolated from the main codebase until it is ready. Use a descriptive branch name, such as:
    
       
       git checkout -b feature/add-resume-upload
 
-### 3. ** Make Changes and Commit**
+### 3. **Make Changes and Commit**
    Make the necessary changes to the project. Be sure to follow the existing coding style and conventions. Add tests where applicable, and ensure all tests pass before committing.
    When making commits, use clear and concise commit messages to describe the purpose of the changes. Follow the format:
 
