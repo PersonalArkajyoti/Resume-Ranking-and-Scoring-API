@@ -68,17 +68,51 @@ After extracting the job criteria, you can score resumes by sending a POST reque
    - total_score: The total score for the candidate, based on the sum of all skill set scores.
    
 ## Running the Application
-To run the FastAPI app locally, use Uvicorn:
-   ```bash
-   uvicorn main:app --reload
-This will start the API on http://127.0.0.1:8000.
+   To run the FastAPI app locally, use Uvicorn:
+      ```bash
+      uvicorn main:app --reload
+   This will start the API on http://127.0.0.1:8000.
 
 ## Endpoints
    - POST /extract_criteria/: Extract job criteria from a job description (PDF or DOCX).
    - POST /score_resumes/: Score resumes based on the extracted criteria and return the results in CSV format.
 
+## Contribution Guidelines : 
+
+We welcome contributions to this project! If you'd like to help improve it, please follow these guidelines:
+
+### 1. **Fork the Repository**
+
+   Start by forking the repository. This will create a copy of the project under your GitHub account, where you can freely make changes.
+
+### 2. **Make Changes**
+
+   Create a new branch for each significant change you make. This keeps your work isolated from the main codebase until it is ready. Use a descriptive branch name, such as:
+   
+      ```bash
+      git checkout -b feature/add-resume-upload
+
+### 3. ** Make Changes and Commit**
+   Make the necessary changes to the project. Be sure to follow the existing coding style and conventions. Add tests where applicable, and ensure all tests pass before committing.
+   When making commits, use clear and concise commit messages to describe the purpose of the changes. Follow the format:
+
+      ```bash
+      git commit -m "Brief description of changes"
+   If your commit fixes a bug or addresses an issue, include the issue number in the commit message:
+      ```bash
+      git commit -m "Fix bug with PDF extraction #15"
+      
+### 5. **Test Your Changes**
+   Make sure to test your changes thoroughly. Ensure that the application works as expected and that all new features or bug fixes have appropriate tests.
+
+### 6. **Push Your Changes**
+   Once you're happy with your changes, push the branch to your forked repository:
+
+      ```bash
+      git push origin feature/add-resume-upload
+      
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+   This project is licensed under the MIT License - see the LICENSE file for details.
 
 
