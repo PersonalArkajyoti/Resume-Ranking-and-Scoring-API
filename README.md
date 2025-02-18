@@ -41,34 +41,32 @@ The API integrates with the Groq API to extract job criteria from job descriptio
 1. Extract Job Criteria from a Job Description
 To extract job criteria, send a POST request to /extract_criteria/ with a PDF or DOCX file containing the job description. The response will return the extracted criteria in JSON format.
 
-Example request:
-```bash
-curl -X 'POST' \
-  'http://127.0.0.1:8000/extract_criteria/' \
-  -F 'file=@job_description.pdf'
+   Example request:
+   ```bash
+   curl -X 'POST' \
+     'http://127.0.0.1:8000/extract_criteria/' \
+     -F 'file=@job_description.pdf'
 
 
 2. Score Resumes
 After extracting the job criteria, you can score resumes by sending a POST request to /score_resumes/ with one or more resume files (PDF or DOCX). The API will return a CSV file with the candidates' scores based on the extracted criteria.
-
-Example request:
-
-```bash
-curl -X 'POST' \
-  'http://127.0.0.1:8000/score_resumes/' \
-  -F 'resumes=@resume1.pdf' \
-  -F 'resumes=@resume2.docx'
+   Example request:
+   ```bash
+   curl -X 'POST' \
+     'http://127.0.0.1:8000/score_resumes/' \
+     -F 'resumes=@resume1.pdf' \
+     -F 'resumes=@resume2.docx'
 
 
 3. CSV Output
-The response will include a CSV file with the following columns:
-
-candidate_name: The name of the candidate (if extracted).
-Skill_set1: The score for Skill_Set1
-Skill_set2: The score for Skill_Set2
-Skill_set3: The score for Skill_Set3
-total_score: The total score for the candidate, based on the sum of all skill set scores.
-The candidates will be sorted by their total_score in descending order.
+   The response will include a CSV file with the following columns:
+   
+   candidate_name: The name of the candidate (if extracted).
+   Skill_set1: The score for Skill_Set1
+   Skill_set2: The score for Skill_Set2
+   Skill_set3: The score for Skill_Set3
+   total_score: The total score for the candidate, based on the sum of all skill set scores.
+   The candidates will be sorted by their total_score in descending order.
 
 ## Running the Application
 To run the FastAPI app locally, use Uvicorn:
