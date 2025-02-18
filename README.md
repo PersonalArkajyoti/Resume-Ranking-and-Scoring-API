@@ -68,9 +68,8 @@ After extracting the job criteria, you can score resumes by sending a POST reque
    - total_score: The total score for the candidate, based on the sum of all skill set scores.
    
 ## Running the Application
-   To run the FastAPI app locally, use Uvicorn:
+   To run the FastAPI app locally, use uvicorn
       uvicorn main:app --reload
-      
    This will start the API on http://127.0.0.1:8000.
 
 ## Endpoints
