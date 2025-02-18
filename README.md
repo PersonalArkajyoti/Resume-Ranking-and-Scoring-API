@@ -26,7 +26,7 @@ The API integrates with the Groq API to extract job criteria from job descriptio
 1. Clone the repository:
 
    ```bash
-   [git clone https://github.com/PersonalArkajyoti/Resume-Ranking-and-Scoring-API.git
+   git clone https://github.com/PersonalArkajyoti/Resume-Ranking-and-Scoring-API.git
    cd Resume-Ranking-and-Scoring-API
 
 2. Install the required dependencies:
