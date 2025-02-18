@@ -69,10 +69,8 @@ After extracting the job criteria, you can score resumes by sending a POST reque
    
 ## Running the Application
    To run the FastAPI app locally, use Uvicorn:
-   
-         ```bash
-         uvicorn main:app --reload
-         
+    ```bash
+      uvicorn main:app --reload
    This will start the API on http://127.0.0.1:8000.
 
 ## Endpoints
