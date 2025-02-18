@@ -69,8 +69,8 @@ After extracting the job criteria, you can score resumes by sending a POST reque
    
 ## Running the Application
    To run the FastAPI app locally, use Uvicorn:
-      ```bash
       uvicorn main:app --reload
+      
    This will start the API on http://127.0.0.1:8000.
 
 ## Endpoints
@@ -89,17 +89,17 @@ We welcome contributions to this project! If you'd like to help improve it, plea
 
    Create a new branch for each significant change you make. This keeps your work isolated from the main codebase until it is ready. Use a descriptive branch name, such as:
    
-      ```bash
+      
       git checkout -b feature/add-resume-upload
 
 ### 3. ** Make Changes and Commit**
    Make the necessary changes to the project. Be sure to follow the existing coding style and conventions. Add tests where applicable, and ensure all tests pass before committing.
    When making commits, use clear and concise commit messages to describe the purpose of the changes. Follow the format:
 
-      ```bash
+      
       git commit -m "Brief description of changes"
    If your commit fixes a bug or addresses an issue, include the issue number in the commit message:
-      ```bash
+      
       git commit -m "Fix bug with PDF extraction #15"
       
 ### 5. **Test Your Changes**
@@ -108,7 +108,7 @@ We welcome contributions to this project! If you'd like to help improve it, plea
 ### 6. **Push Your Changes**
    Once you're happy with your changes, push the branch to your forked repository:
 
-      ```bash
+      
       git push origin feature/add-resume-upload
       
 
