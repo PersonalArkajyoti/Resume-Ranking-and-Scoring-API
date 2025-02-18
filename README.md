@@ -61,22 +61,21 @@ After extracting the job criteria, you can score resumes by sending a POST reque
 3. CSV Output
    The response will include a CSV file with the following columns:
    
-   candidate_name: The name of the candidate (if extracted).
-   Skill_set1: The score for Skill_Set1
-   Skill_set2: The score for Skill_Set2
-   Skill_set3: The score for Skill_Set3
-   total_score: The total score for the candidate, based on the sum of all skill set scores.
-   The candidates will be sorted by their total_score in descending order.
-
+   - candidate_name: The name of the candidate (if extracted).
+   - Skill_set1: The score for Skill_Set1
+   - Skill_set2: The score for Skill_Set2
+   - Skill_set3: The score for Skill_Set3
+   - total_score: The total score for the candidate, based on the sum of all skill set scores.
+   
 ## Running the Application
 To run the FastAPI app locally, use Uvicorn:
-'''bash
-uvicorn main:app --reload
+   ```bash
+   uvicorn main:app --reload
 This will start the API on http://127.0.0.1:8000.
 
 ## Endpoints
-POST /extract_criteria/: Extract job criteria from a job description (PDF or DOCX).
-POST /score_resumes/: Score resumes based on the extracted criteria and return the results in CSV format.
+   - POST /extract_criteria/: Extract job criteria from a job description (PDF or DOCX).
+   - POST /score_resumes/: Score resumes based on the extracted criteria and return the results in CSV format.
 
 
 ## License
